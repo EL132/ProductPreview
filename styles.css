@@ -1,0 +1,132 @@
+/* All Elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*
+    Fonts being used:
+
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    */
+}
+
+/* HTML Elements */
+
+body {
+    background: #f3eae3;
+}
+
+/* Card Styling */
+
+#entire-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    align-items: center;
+}
+
+.perfume-image {
+    width: 15rem;
+    height: 22.5rem;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.content-wrapper {
+    background: white;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    width: 15rem;
+    height: 22.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.category {
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+}
+
+.perfume-name {
+    font-size: 1.8rem;
+    font-family: 'Fraunces', sans-serif;
+    margin: 10px 0;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.price-section {
+    display: flex;
+    margin: 9px 0;
+}
+
+.current-price {
+    margin-right: 10px;
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    margin: 12px 0;
+    text-decoration: line-through;
+}
+
+.button {
+    color: white;
+    background: hsl(158, 36%, 37%);
+    border: 1px solid hsl(158, 36%, 37%);
+    height: 2rem;
+    border-top-right-radius: 7%;
+    /* border-radius: 7%; */
+}
+
+/*Styling for Mobile View*/
+
+@media (max-width: 375px) {
+    #entire-card {
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+    }
+
+    .perfume-image {
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 15rem;
+    }
+
+    .content-wrapper {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        height: 35rem;
+    }
+
+    .content {
+        margin-bottom: 2px;
+    }
+}
+
+/* Attribution */
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
